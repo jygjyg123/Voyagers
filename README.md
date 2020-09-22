@@ -69,7 +69,7 @@ _Inital features involved_: destination map, translator, schedule planner
 _ECT_: Week 4
 
 
-## Stakeholders
+## Stakeholders 
 
 * End users and Beneficiaries
 
@@ -87,7 +87,7 @@ _ECT_: Week 4
 
 > Sales and Customer Services team
 
-## Team 
+## Team D
 
 ![Voyagers](https://media.giphy.com/media/ecxPmlUNAJFzGFXg6X/giphy.gif)
 
