@@ -61,6 +61,11 @@
                                 href="{% url 'about' %}">Contacts</a>
                         </li>
                     </ul>
+                    {%if user.is_authenticated %}
+                    <div class="navbar-buttons mbr-section-btn"><a class="btn btn-danger display-4"
+                        href="{% url 'logout' %}">
+                        Logout</a></div>
+                        {%else%}
 
                     <div class="navbar-buttons mbr-section-btn"><a class="btn btn-danger display-4"
                             href="{% url 'signup' %}">
@@ -69,6 +74,7 @@
                     <div class="navbar-buttons mbr-section-btn"><a class="btn btn-danger display-4"
                             href="{% url 'login' %}">
                             Log In Now!</a></div>
+                    {%endif%}
                 </div>
             </div>
         </nav>
