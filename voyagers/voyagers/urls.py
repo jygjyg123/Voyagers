@@ -23,18 +23,17 @@ from django.contrib.auth import views as auth_views
 
 
 urlpatterns = [
+
         path('admin/', admin.site.urls),
         path("logout/",auth_views.LogoutView.as_view(template_name='logout.html'),name='logout'),
         path('', include('home.urls')),
+        path('', include('dashboard.urls'))
         
-        
-        
+            
 
 ]
 
 
-urlpatterns += [path('', RedirectView.as_view(url='/home', permanent=True)),]
-urlpatterns +=  static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
-
-
+urlpatterns += [path('', RedirectView.as_view(url='/home', permanent=True)), ]
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
