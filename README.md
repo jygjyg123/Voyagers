@@ -103,23 +103,34 @@ _ECT_: Week 4
 
 # Milestone 1
 
+## FrontEnd 
+
+https://trnguyen1510.github.io/front/
+
 ## Iteration 1 
 > 15 calendar days, 11 working days (75% velocity)
 > Days of actual work: 5 * 15 * 0.75 = 56 days
 
+
+![BurnoutIteration1](https://i.imgur.com/X7r4BGD.png)
+
 ### Work breakdown
 
-:black_square_button: Welcome Page - Kennenth and Tracy 
+:white_check_mark: Welcome Page - Kennenth and Tracy 
 
 > Priority : 10
 
 > EST. 4-5 days
 
-:black_square_button: About Us - Kennenth and Tracy 
+:white_check_mark: About Us - Kennenth and Tracy 
 
 > Priority: 20
 
 > EST. 4-5 days
+
+:white_check_mark: Sign In Page (Front End) - Kenneth and Tracy
+
+:white_check_mark: Sign Up Page (Frond End) - Kenneth and Tracy 
 
 
 :black_square_button: Sign In (connect and perform authentication) - Tayo/Jerry/Karthik 
@@ -138,6 +149,9 @@ _ECT_: Week 4
 > 12 calendar days, 9 working days (75% Velocity)
 
 > Days of actual work: 5 * 12 * 0.75 = 45 days 
+
+
+![Iteration2Burnout](https://i.imgur.com/y9EJmdd.png)
 
 ### Work breakdown 
 
@@ -176,7 +190,13 @@ _ECT_: Week 4
 
 **Team's Trello link:** https://trello.com/b/gdYNZyem
 
+### Pytest Description
+ 
+All the current/future tests will be included in the **tests** directory under voyagers
 
+Part B test (pageload.py):
+- Test the validity of homepage URL
 
-
-
+**Instruction**
+- install "Validators" - pip install validators
+- run pytest pageload.py
