@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'voyagers.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
+        'ENGINE': 'djongo',
         'NAME': 'mydatabase',
     }
 }
