@@ -2,7 +2,7 @@
 
 # Voyagers
 
-> Never Travel alone!
+### Never Travel alone!
 
 ![Voyagers](https://media.giphy.com/media/FxTcyJKmxWys88EWHD/giphy.gif)
 
