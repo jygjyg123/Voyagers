@@ -27,16 +27,26 @@ def test_user_create():
 
 
 @pytest.mark.django_db
+<<<<<<< HEAD
 def test_User_Profile_create():
     contact = User_Profile.objects.create(
         first_name='John', last_name='Doe', Address='111', Country='USA')
+=======
+def test_user_Profile_create():
+    contact = User_Profile.objects.create(first_name='John', last_name='Doe', Address='111', Country='USA')
+>>>>>>> 6002d557839e665e2c7088812e767334f57715f2
     assert contact.first_name == 'John'
 
 
 @pytest.mark.django_db
+<<<<<<< HEAD
 def test_Attraction_create():
     tour = Attraction.objects.create(
         city='la', attractionName='boat', attractionDescription='boatisfun', price='11')
+=======
+def test_attraction_create():
+    tour = Attraction.objects.create(city='la', attractionName='boat', attractionDescription='boatisfun', price='11')
+>>>>>>> 6002d557839e665e2c7088812e767334f57715f2
     assert tour.city == 'la'
 
 # Client testing
