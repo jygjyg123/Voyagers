@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'voyagers.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'djongo',
+        'ENGINE': 'django.db.backends.sqlite3',
         'NAME': 'mydatabase',
     }
 }
@@ -109,7 +109,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Los_Angeles'
 
 USE_I18N = True
 
