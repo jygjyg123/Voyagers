@@ -15,43 +15,49 @@ def pageloader():
 def test_load():
     assert validators.url(pageloader())
 
-#Database helpers testing
+# Database helpers testing
+
+
 @pytest.mark.django_db
 def test_user_create():
     User.objects.create_user('john', 'lennon@thebeatles.com', 'johnpassword')
     assert User.objects.count() == 1
 
-#User_profile(home) testing
+# User_profile(home) testing
+
+
 @pytest.mark.django_db
 def test_User_Profile_create():
-    contact = User_Profile.objects.create(first_name='John', last_name='Doe', Address='111', Country='USA')
+    contact = User_Profile.objects.create(
+        first_name='John', last_name='Doe', Address='111', Country='USA')
     assert contact.first_name == 'John'
+
 
 @pytest.mark.django_db
 def test_Attraction_create():
-    tour = Attraction.objects.create(city='la', attractionName='boat', attractionDescription='boatisfun', price='11')
+    tour = Attraction.objects.create(
+        city='la', attractionName='boat', attractionDescription='boatisfun', price='11')
     assert tour.city == 'la'
 
-#Client testing
+# Client testing
+
+
 @pytest.mark.django_db
 def test_view_home(client):
-   url = reverse('index')
-   response = client.get(url)
-   assert response.status_code == 200
+    url = reverse('index')
+    response = client.get(url)
+    assert response.status_code == 200
+
 
 @pytest.mark.django_db
 def test_view_dashboard(client):
-   url = reverse('dashboard')
-   response = client.get(url)
-   assert response.status_code == 200
+    url = reverse('dashboard')
+    response = client.get(url)
+    assert response.status_code == 200
+
 
 @pytest.mark.django_db
 def test_view_tours(client):
-   url = reverse('tours')
-   response = client.get(url)
-   assert response.status_code == 200
-
-
-
-
-
+    url = reverse('tours')
+    response = client.get(url)
+    assert response.status_code == 200
