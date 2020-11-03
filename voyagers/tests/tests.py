@@ -15,59 +15,43 @@ def pageloader():
 def test_load():
     assert validators.url(pageloader())
 
-# Database helpers testing
-
-
+#Database helpers testing
 @pytest.mark.django_db
 def test_user_create():
     User.objects.create_user('john', 'lennon@thebeatles.com', 'johnpassword')
     assert User.objects.count() == 1
 
-# User_profile(home) testing
-
-
+#User_profile(home) testing
 @pytest.mark.django_db
-<<<<<<< HEAD
-def test_User_Profile_create():
-    contact = User_Profile.objects.create(
-        first_name='John', last_name='Doe', Address='111', Country='USA')
-=======
 def test_user_Profile_create():
     contact = User_Profile.objects.create(first_name='John', last_name='Doe', Address='111', Country='USA')
->>>>>>> 6002d557839e665e2c7088812e767334f57715f2
     assert contact.first_name == 'John'
 
-
 @pytest.mark.django_db
-<<<<<<< HEAD
-def test_Attraction_create():
-    tour = Attraction.objects.create(
-        city='la', attractionName='boat', attractionDescription='boatisfun', price='11')
-=======
 def test_attraction_create():
     tour = Attraction.objects.create(city='la', attractionName='boat', attractionDescription='boatisfun', price='11')
->>>>>>> 6002d557839e665e2c7088812e767334f57715f2
     assert tour.city == 'la'
 
-# Client testing
-
-
+#Client testing
 @pytest.mark.django_db
 def test_view_home(client):
-    url = reverse('index')
-    response = client.get(url)
-    assert response.status_code == 200
-
+   url = reverse('index')
+   response = client.get(url)
+   assert response.status_code == 200
 
 @pytest.mark.django_db
 def test_view_dashboard(client):
-    url = reverse('dashboard')
-    response = client.get(url)
-    assert response.status_code == 200
-
+   url = reverse('dashboard')
+   response = client.get(url)
+   assert response.status_code == 200
 
 @pytest.mark.django_db
 def test_view_tours(client):
-    url = reverse('tours')
-    response = client.get(url)
-    assert response.status_code == 200
+   url = reverse('tours')
+   response = client.get(url)
+   assert response.status_code == 200
+
+
+
+
+
