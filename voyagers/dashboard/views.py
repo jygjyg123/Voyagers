@@ -26,6 +26,6 @@ def editing(request):
             return redirect('dashboard.html')
     else:
         form = ProfileForm()
-        context = {'form': form}
-
+    context = {'form': form}
+    
     return render(request, 'editing.html', context)
