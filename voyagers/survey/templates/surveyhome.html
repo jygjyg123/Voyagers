@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Demo</title>
+</head>
+<body>
+    <center>
+        <h1>How to Create a Travel Survey</h1>
+        <h3>Just give it a try</h3>
+
+    </center>
+        <div style="padding-left: 30px;">
+            {% for result in Survey %}
+            <table>
+                <tr>
+                    <td>
+                        {{ result.id }}, {{ result.question }} ?
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="radio" id="option1" name="{{ result.id }}" value="{{ result.option1 }}">{{ result.option1 }}</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" id="option2" name="{{ result.id }}" value="{{ result.option2 }}">{{ result.option2 }}</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" id="option3" name="{{ result.id }}" value="{{ result.option3 }}">{{ result.option3 }}</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" id="option4" name="{{ result.id }}" value="{{ result.option4 }}">{{ result.option4 }}</td>
+                </tr>
+            </table>
+
+            {% endfor %}
+            <hr/>
+            <input type="Submit" value="Click For Results" id="but1"/>
+        </div>
+
+</body>
+</html>
