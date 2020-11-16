@@ -1,6 +1,6 @@
-{% extends 'base.html' %}
+<!--{% extends 'base.html' %}
 
-{% block content %}
+{% block content %}-->
 
 <!-- ======= Hero Section ======= -->
 <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
@@ -21,74 +21,97 @@
             </div>
             <div class="form-row">
                 <div class="form-group col-md-4">
-                    <label for="User Account">Account Details</label>
-                    {{user.as_p}}
+                    <label for="firstName">Legal First Name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="Legal First Name"> {{form.firstname}}
                 </div>
-            </div> 
-            <div class="form-row">                   
+                <div class="form-group col-md-4">
+                    <label for="lastName">Legal Last Name</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Legal Last Name"> {{form.lastname}}
+                </div>
                 <div class="form-group col-md-3">
-                    <label for="MidName">Initial Middle Name</label>
-                    {{form.middlename}}
+                    <label for="lastName">Initial Middle Name</label>
+                    <input type="text" class="form-control" id="midName" placeholder="MiddleName"> {{form.middlename}}
                 </div>
 
             </div>
 
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4" disabled>Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email"> {{form.email}}
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">Password</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password"> {{form.password}}
+                </div>
+            </div>
 
             <div class="form-group">
                 <label class="control-label">Date Of Birth</label>
                 <div class='input-group date' id='datetimepicker1'>
-                    {{form.date_of_birth}}
+                    <input type="date" class="form-control" id="birthday" name="birthday"> {{form.date_of_birth}}
                 </div>
             </div>
             <div class="form-group">
                 <label for="twitter">Twitter</label>
-                {{form.twitter_handle}}
+
+                <input class="form-control" type="url" value="https://twitter.com/" id="twitter"> {{form.twitter_handle}}
+
             </div>
             <div class="form-group">
                 <label for="facebook">Facebook</label>
-                {{form.fb_handle}}
+
+                <input class="form-control" type="url" value="https://facebook.com/" id="facebook"> {{form.fb_handle}}
+
             </div>
             <div class="form-group">
                 <label for="instagram">Instagram</label>
-                {{form.insta_handle}}
+
+                <input class="form-control" type="url" value="https://instagram.com/" id="instagram"> {{form.insta_handle}}
+
             </div>
             <div class="form-group">
                 <label for="inputPhone">Telephone</label>
-                {{form.telephone}}
+
+                <input class="form-control" type="tel" value="1-(555)-555-5555" id="example-tel-input"> {{form.telephone}}
             </div>
             <div class="form-group">
                 <label for="Website">Website</label>
-                {{form.website}} 
+                <input class="form-control" type="url" value="https://www.example.com" id="website"> {{form.website}} 
             </div>
             <div class="form-group">
                 <label for="inputAddress">Address</label>
-                {{form.address1}}
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St"> {{form.address1}}
             </div>
             <div class="form-group">
                 <label for="inputAddress2">Address 2</label>
-                {{form.address2}}
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor"> {{form.address2}}
             </div>
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="inputCity">City</label>
-                   {{form.city}}
+                    <input type="text" class="form-control" id="inputCity"> {{form.city}}
                 </div>
                 <div class="form-group col-md-4">
                     <label for="inputState">State</label>
-                    {{form.state}}
+                    <select id="inputState" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>...</option>
+                    </select> {{form.state}}
                 </div>
                 <div class="form-group col-md-2">
                     <label for="inputZip">Zip</label>
-                    {{form.zipcode}}
+                    <input type="number" class="form-control" id="inputZip"> {{form.zipcode}}
                 </div>
             </div>
             <!--Selecting profile pic-->
-            <!--div class="form-group">
+            <div class="form-group">
                 <h3>Select Your Profile Picture</h3>
                 <div class="custom-file">
-                    {{form.profile_pic}}
+                    <input type="file" class="custom-file-input" id="customFile">
+                    <label class="custom-file-label" for="customFile">Select Profile Picture</label> {{form.profile_pic}}
                 </div>
-            </div-->
+            </div>
             <!--Selecting profile pic ends-->
 
             <button type="submit" class="btn btn-danger">Save</button>
