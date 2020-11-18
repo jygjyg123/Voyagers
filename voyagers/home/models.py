@@ -15,3 +15,4 @@ class User_Profile(models.Model):
 # class customer(models.Model):
 #     username=models.CharField(max_length=10)
 #     email = mdoels.e
+

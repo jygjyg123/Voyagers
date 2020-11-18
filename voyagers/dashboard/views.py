@@ -1,11 +1,11 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
-from django.contrib.auth.models import User,auth
 from .models import Profile
 from .forms import UserForm, ProfileForm
 from django.forms.models import inlineformset_factory
 from django.core.exceptions import PermissionDenied
 from django.contrib.auth import update_session_auth_hash
+
 
 
 @login_required()  # only logged in users should access this
@@ -49,6 +49,7 @@ def editing(request):
                 custom_form = form.save(commit=False)
                 formset = ProfileInlineFormset(
                     request.POST, request.FILES, instance=custom_form)
+
 
                 if formset.is_valid():
                     custom_form.save()
