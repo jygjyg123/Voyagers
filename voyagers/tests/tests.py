@@ -1,6 +1,7 @@
 # test open and load of default page
 import pytest
 import validators
+import uuid
 from django.contrib.auth.models import User
 from django.urls import reverse
 from home.models import User_Profile
@@ -52,6 +53,38 @@ def test_view_tours(client):
    assert response.status_code == 200
 
 
+# @pytest.mark.django_db
+# def test_with_authenticated_client(client, django_user_model):
+#     username = "user1"
+#     password = "bar"
+#     user = django_user_model.objects.create_user(username=username, password=password)
+#     # Use this:
+#     # Or this:
+#     client.login(username=username, password=password)
+#     response = client.get('login')
+#     assert response.content == 'Protected Area'
 
+# @pytest.fixture
+# def test_password():
+#     return 'strong-test-pass'
+#
+#
+# @pytest.fixture
+# def create_user(db, django_user_model, test_password):
+#     def make_user(**kwargs):
+#         kwargs['password'] = test_password
+#         if 'username' not in kwargs:
+#             kwargs['username'] = str(uuid.uuid4())
+#         return django_user_model.objects.create_user(**kwargs)
+#
+#     return make_user
+#
+# @pytest.mark.django_db
+# def test_user_detail(client, create_user):
+#    user = create_user(username='someone')
+#    url = reverse('index', kwargs={'pk': user.pk})
+#    response = client.get(url)
+#    assert response.status_code == 200
+#    assert 'someone' in response.content
 
 
