@@ -26,9 +26,9 @@ urlpatterns = [
     path('', include('home.urls')),
     path('', include('dashboard.urls')),
     path('', include('tourpackages.urls')),
-    path('', include('survey.urls'))
-    
-
+    path('', include('survey.urls')),
+    path('', include('forum.urls')),
+    path('', include('user_profile.urls')),
 
 
 ]
