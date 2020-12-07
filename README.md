@@ -65,7 +65,7 @@ Once `pip` has finished downloading the dependencies:
 ```sh
 (env)$ python manage.py runserver
 ```
-Expecting result: 
+Expected result: 
 ```
 Watching for file changes with StatReloader
 Performing system checks...
@@ -110,7 +110,7 @@ To run pytest `cd` into the directory where `manage.py` is and run:
 - The instruction is identical as the one in milstone from above
 - Pytest Coverage: 80%
 
-**Expected Result**
+**Coverage Result**
 
 ![pytest_screenshot](https://i.imgur.com/5tozuCz.jpg)
 
