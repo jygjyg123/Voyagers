@@ -19,7 +19,7 @@ class Survey(models.Model):
     def __str__(self):
         return self.user.username
 
-"""
+    
 @receiver(post_save, sender=User)
 def create_surveyAnswer(sender, instance, created, **kwargs):
     if created:
@@ -29,7 +29,7 @@ def create_surveyAnswer(sender, instance, created, **kwargs):
 @receiver(post_save, sender=User)
 def save_surveyAnswer(sender, instance, **kwargs):
     instance.survey.save()
-"""
+
 
 # class Answer_Option(models.Model):
 #     survey = models.ForeignKey(Question, on_delete=models.CASCADE)
