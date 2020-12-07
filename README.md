@@ -94,9 +94,9 @@ To deactivate the Virtual Environment
 ```sh
 (env)$ deactivate
 ```
-## Tests
+## Tests (Milestone 1)
  **Instruction**
- Make sure your Virtual Environment is activated. 
+ - Make sure your Virtual Environment is activated. 
 To run pytest `cd` into the directory where `manage.py` is and run: 
 ```sh
 (env)$ pytest
@@ -104,6 +104,15 @@ To run pytest `cd` into the directory where `manage.py` is and run:
 **Expected Result**
 
 ![pytest_screenshot](https://i.imgur.com/nksfbiK.jpg)
+
+## Tests (Milestone 2)
+**Instruction**
+- The instruction is identical as the one in milstone from above
+- Pytest Coverage: 80%
+
+**Expected Result**
+
+![pytest_screenshot](https://i.imgur.com/5tozuCz.jpg)
 
 ## How to use the website
 - Users have access to `Sign up` , `Log in`,`About us`, `Upcoming Tours` and `Contact` pages from top menu bar. 
