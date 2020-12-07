@@ -14,7 +14,11 @@ class Profile(models.Model):
     occupation = models.CharField(max_length=100, default='Occupation', blank=True)
     degree = models.CharField(max_length=100,default='')
     website = models.URLField(default='', blank=True)
+<<<<<<< HEAD
     date_of_birth = models.DateField(null=True, blank=True)    #(auto_now=False)
+=======
+    date_of_birth = models.DateField(null=True, blank=True)
+>>>>>>> 370f7126976c86bba7cdb6931c4415f06c8587e0
     bio = models.TextField(default='', blank=True)
     twitter_handle = models.URLField(default='', blank=True)
     fb_handle = models.URLField(default='', blank=True)
