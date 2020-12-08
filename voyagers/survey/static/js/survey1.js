@@ -41,9 +41,9 @@ submitBtn.addEventListener("click", function () {
     progressText[current - 1].classList.add("active");
     current += 1;
     setTimeout(function () {
-        alert("Your Form Successfully Signed up");
-        location.reload();
-    }, 800);
+        alert("Your Form Successfuly Submitted");
+        location.replace("/dashboard");
+    }, 100);
 });
 
 prevBtnSec.addEventListener("click", function (event) {
