@@ -264,7 +264,7 @@ College students, newly graduates, young professionals, unexperienced or experie
 
 :white_check_mark:  Display Survey Results  - Tracy/Jerry
 
-:white_check_mark:  Profile Editing  - Tracy/Jerry
+:white_check_mark:  Profile Editing  - Tracy/Jerry/Tayo
 
 ### Testing and Debugging
 
