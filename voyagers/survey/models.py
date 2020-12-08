@@ -20,7 +20,11 @@ class Survey(models.Model):
     def __str__(self):
         return self.user.username
 
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 370f7126976c86bba7cdb6931c4415f06c8587e0
 @receiver(post_save, sender=User)
 def create_surveyAnswer(sender, instance, created, **kwargs):
     if created:
@@ -38,3 +42,4 @@ def save_surveyAnswer(sender, instance, **kwargs):
 #
 #     def __unicode__(self):
 #         return self.text
+
