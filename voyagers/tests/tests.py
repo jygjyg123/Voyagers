@@ -10,6 +10,8 @@ from django.urls import reverse
 
 
 
+
+def pageloader1():
     page = "http://127.0.0.1:8000/login/"
     return page
 
@@ -36,6 +38,8 @@ def pageloader4():
 
 def test_view_signup():
     assert validators.url(pageloader4())
+
+   
 
 
 
