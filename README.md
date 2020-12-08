@@ -101,7 +101,7 @@ To run pytest `cd` into the directory where `manage.py` is and run:
 ```sh
 (env)$ pytest
 ``` 
-**Expected Result**
+**Previous Result**
 
 ![pytest_screenshot](https://i.imgur.com/nksfbiK.jpg)
 
