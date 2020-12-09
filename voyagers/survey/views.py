@@ -15,13 +15,9 @@ from dashboard.views import dashboard
 
 
 myclient = MongoClient(
-    "mongodb+srv://Voyagers:Voyagers123@cluster0.zshph.mongodb.net/<dbname>?retryWrites=true&w=majority")
+    "mongodb+srv://Voyagers:Voyagers123@cluster0.45hpd.mongodb.net/<dbname>?retryWrites=true&w=majority")
 mydb = myclient["voyagers"]
 mycol = mydb["survey_survey"]
-
-
-
-
 
 
 @login_required()
@@ -53,7 +49,6 @@ def survey(request):
 
             if pk in older_data.values():
                 mycol.update_one(older_data, survey_data)
-           
 
     return render(request, 'survey.html')
 
