@@ -42,7 +42,9 @@ INSTALLED_APPS = [
     'home.apps.HomeConfig',
     'dashboard.apps.DashboardConfig',
     'tourpackages.apps.TourpackagesConfig',
-    'survey.apps.SurveyConfig'
+    'survey.apps.SurveyConfig',
+    'forum.apps.ForumConfig',
+    'user_profile.apps.UserProfileConfig',
 ]
 
 MIDDLEWARE = [
@@ -83,12 +85,14 @@ DATABASES = {
     'default': {
         'ENGINE': 'djongo',
         "CLIENT": {
+
             "name": "voyagers",
             "host": "mongodb+srv://Voyagers:Voyagers123@cluster0.45hpd.mongodb.net/<dbname>?retryWrites=true&w=majority",
             "username": "Voyagers",
             "password": "Voyagers123",
             "authMechanism": "SCRAM-SHA-1",
         },
+
     }
 }
 
@@ -138,6 +142,11 @@ MEDIA_URL = '/images/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+# added cautiously
+LOGIN_REDIRECT_URL = '/profile/'
+LOGOUT_REDIRECT_URL = '/'
+LOGIN_URL = '/login/'
 
 
 print("STATIC URL", STATIC_URL)
