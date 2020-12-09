@@ -15,7 +15,7 @@ from dashboard.views import dashboard
 
 
 myclient = MongoClient(
-    "mongodb+srv://Voyagers:Voyagers123@cluster0.zshph.mongodb.net/<dbname>?retryWrites=true&w=majority")
+    "mongodb+srv://Voyagers:Voyagers123@cluster0.45hpd.mongodb.net/<dbname>?retryWrites=true&w=majority")
 mydb = myclient["voyagers"]
 mycol = mydb["survey_survey"]
 

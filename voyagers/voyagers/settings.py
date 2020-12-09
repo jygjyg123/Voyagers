@@ -86,13 +86,14 @@ DATABASES = {
         'ENGINE': 'djongo',
         "CLIENT": {
            "name": "voyagers",
-           "host": "mongodb+srv://Voyagers:Voyagers123@cluster0.zshph.mongodb.net/<dbname>?retryWrites=true&w=majority",
+           "host": "mongodb+srv://Voyagers:Voyagers123@cluster0.45hpd.mongodb.net/<dbname>?retryWrites=true&w=majority",
            "username": "Voyagers",
            "password": "Voyagers123",
            "authMechanism": "SCRAM-SHA-1",
         }, 
     }
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
