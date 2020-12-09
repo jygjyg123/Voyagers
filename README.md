@@ -118,6 +118,17 @@ To run pytest `cd` into the directory where `manage.py` is and run:
 - The instruction is identical as the one in milstone from above
 - Pytest Coverage: 80%
 
+#### Coverage Instruction:
+- install pytest-cov
+```sh
+(env)$ pip install pytest-cov
+```
+
+- run pytest-cov
+```sh
+(env)$ pytest --cov
+``` 
+
 **Coverage Result**
 
 ![pytest_screenshot](https://i.imgur.com/5tozuCz.jpg)
