@@ -8,7 +8,7 @@
 [Try Me !](https://voyagers-web.herokuapp.com/)
 
 
-### Never Travel alone!
+### Never Travel Alone!
 ![Voyagers](https://media.giphy.com/media/FxTcyJKmxWys88EWHD/giphy.gif)
 
 Voyagers provides a platform that helps people match their travel companions based on their customized travel profiles and preferences.
@@ -150,6 +150,7 @@ College students, newly graduates, young professionals, unexperienced or experie
 
 ## User Stories
 
+Milestone 1
  - As a user, I want to be able to sign up for the travel webite.
  - As a user, I want to be able to log in for the travel website.
  - As a user, I want to ensure my sign up credentials fulfill the
@@ -161,7 +162,9 @@ College students, newly graduates, young professionals, unexperienced or experie
 - As a user, I want to view the travel website's contact information.  
 - As a user, I want to see previous trips photos.
 - As a user, I want to see the travel website's partners.
-- As a user, I want to have a user dashboard that contains my information and resume so that other users can take a look.  
+- As a user, I want to have a user dashboard that contains my information and resume so that other users can take a look. 
+
+Milestone 2
 - As a user, I want to be able to edit my profile and personal information.
 - As a user, I want to save my results from the survey preference quiz. 
 - As a user, I want to view the details of a tour package.
